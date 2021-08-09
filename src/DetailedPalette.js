@@ -2,11 +2,10 @@ import { Box, Stack, Button, Center  } from '@chakra-ui/react';
 import { useState } from 'react';
 import { motion } from 'framer-motion'
 import Modal from './Modal';
+import {useParams} from 'react-router-dom'
 
 
-const DetailedPalette = ({setColor, setShowModal}) => {
-  
-  const { palette } = palette.location.state
+const DetailedPalette = ({ setColor, setShowModal }) => {
   
     const containerVariants = {
       hidden: {
@@ -67,6 +66,23 @@ const DetailedPalette = ({setColor, setShowModal}) => {
         setColor(hex)
         setShowModal(true)
       }
+
+    const palette =    
+      {
+        zero: 'Creamy',
+        one : '#f3a683',
+        two : '#f7d794',
+        three : '#778beb',
+        four : '#f19066',
+        five : '#f5cd79',
+        six : '#546de5',
+        seven : '#786fa6',
+        eight : '#f8a5c2',
+        nine : '#63cdda'
+      }
+      const params = useParams()
+      
+
 
     return ( 
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
