@@ -4,44 +4,10 @@ import { motion } from 'framer-motion'
 import Modal from './Modal';
 
 
-const DetailedPalette = ({color, setColor, setShowModal}) => {
-
-    const [palette, setPalette] = useState({
-      one : '#81ecec',
-      two : '#74b9ff',
-      three : '#a29bfe',
-      four : '#00cec9',
-      five : '#0984e3',
-      six : '#6c5ce7',
-      seven : '#fab1a0',
-      eight : '#ff7675',
-      nine : '#fd79a8'
-    })
-    
-    const paletteTwo = {
-      one : '#cd84f1',
-      two : '#ffcccc',
-      three : '#ff4d4d',
-      four : '#c56cf0',
-      five : '#ffb8b8',
-      six : '#ff3838',
-      seven : '#32ff7e',
-      eight : '#7efff5',
-      nine : '#18dcff'
-    }
-    
-    const paletteThree = {
-      one : '#f6b93b',
-      two : '#e55039',
-      three : '#4a69bd',
-      four : '#fa983a',
-      five : '#eb2f06',
-      six : '#1e3799',
-      seven : '#e58e26',
-      eight : '#b71540',
-      nine : '#0c2461'
-    }
-    
+const DetailedPalette = ({setColor, setShowModal}) => {
+  
+  const { palette } = palette.location.state
+  
     const containerVariants = {
       hidden: {
         y: '-50vh',
