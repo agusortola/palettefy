@@ -10,119 +10,119 @@ const Home = () => {
 
   const Friday = {
     zero: 'Friday',
-    one : '#eccc68',
-    two : '#ff2f50',
-    three : '#ff6b81',
-    four : '#ffa502',
-    five : '#ff6348',
-    six : '#ff4757',
-    seven : '#7bed9f',
-    eight : '#70a1ff',
-    nine : '#5352ed'
+    one : '#ECCC68',
+    two : '#FF2F50',
+    three : '#FF6B81',
+    four : '#FFA502',
+    five : '#FF6348',
+    six : '#FF4757',
+    seven : '#7BED9F',
+    eight : '#70A1FF',
+    nine : '#5352ED'
     
   }
   const Lollipop = {
     zero: 'Lollipop',
-    one : '#cd84f1',
-    two : '#ffcccc',
-    three : '#ff4d4d',
-    four : '#c56cf0',
-    five : '#ffb8b8',
-    six : '#ff3838',
-    seven : '#32ff7e',
-    eight : '#7efff5',
-    nine : '#18dcff'
+    one : '#CD84F0',
+    two : '#FFCCCC',
+    three : '#FF4D4D',
+    four : '#C56CF0',
+    five : '#FFB8B8',
+    six : '#FF3838',
+    seven : '#32FF7E',
+    eight : '#7EFFf5',
+    nine : '#18DCFF'
   }
   
   const Minimal = {
     zero: 'Minimal',
-    one : '#eddcd2',
-    two : '#fde2e4',
-    three : '#fad2e1',
-    four : '#c5dedd',
-    five : '#dbe7e4',
-    six : '#f0efeb',
-    seven : '#d6e2e9',
-    eight : '#bcd4e6',
-    nine : '#99c1de'
+    one : '#EDDCD2',
+    two : '#FDE2E4',
+    three : '#FAD2E1',
+    four : '#C5DEDD',
+    five : '#DBE7E4',
+    six : '#F0EFEB',
+    seven : '#D6E2E9',
+    eight : '#BCD4E6',
+    nine : '#99C1DE'
   }
 
   const Creamy = {
     zero: 'Creamy',
-    one : '#f3a683',
-    two : '#f7d794',
-    three : '#778beb',
-    four : '#f19066',
-    five : '#f5cd79',
-    six : '#546de5',
-    seven : '#786fa6',
-    eight : '#f8a5c2',
-    nine : '#63cdda'
+    one : '#F3A683',
+    two : '#F7D794',
+    three : '#778BEB',
+    four : '#F19066',
+    five : '#F5CD79',
+    six : '#546DE5',
+    seven : '#786FA6',
+    eight : '#F8A5C2',
+    nine : '#63CDDA'
   }
 
   const Aquarium = {
     zero: 'Aquarium',
-    one : '#d9ed92',
-    two : '#b5e48c',
-    three : '#99d98c',
-    four : '#76c893',
-    five : '#52b69a',
-    six : '#34a0a4',
-    seven : '#168aad',
-    eight : '#1a759f',
-    nine : '#184e77'
+    one : '#D9ED92',
+    two : '#B5E48C',
+    three : '#99D98C',
+    four : '#76C893',
+    five : '#52B69A',
+    six : '#34A0A4',
+    seven : '#168AAD',
+    eight : '#1A759F',
+    nine : '#184E77'
   }
 
   const Calm = {
     zero: 'Calm',
-    one : '#d8f3dc',
-    two : '#b7e4c7',
-    three : '#95d5b2',
-    four : '#74c69d',
-    five : '#52b788',
-    six : '#40916c',
-    seven : '#2d6a4f',
-    eight : '#1b4332',
-    nine : '#081c15'
+    one : '#D8f3DC',
+    two : '#B7E4C7',
+    three : '#95D5B2',
+    four : '#74C69D',
+    five : '#52B788',
+    six : '#40916C',
+    seven : '#2D6A4F',
+    eight : '#1B4332',
+    nine : '#081C15'
   }
 
   const Cinema = {
     zero: 'Cinema',
-    one : '#b7094c',
-    two : '#a01a58',
-    three : '#892b64',
-    four : '#723c70',
-    five : '#5c4d7d',
-    six : '#455e89',
-    seven : '#2e6f95',
-    eight : '#1780a1',
-    nine : '#0091ad'
+    one : '#B7094C',
+    two : '#A01A58',
+    three : '#892B64',
+    four : '#723C70',
+    five : '#5C4D7D',
+    six : '#455E89',
+    seven : '#2E6f95',
+    eight : '#1780A1',
+    nine : '#0091AD'
   }
 
   const Freedom = {
     zero: 'Freedom',
-    one : '#54478c',
-    two : '#2c699a',
-    three : '#048ba8',
-    four : '#0db39e',
-    five : '#16db93',
-    six : '#83e377',
-    seven : '#b9e769',
-    eight : '#f1c453',
-    nine : '#f29e4c'
+    one : '#54478C',
+    two : '#2C699A',
+    three : '#048bA8',
+    four : '#0DB39E',
+    five : '#16DB93',
+    six : '#83E377',
+    seven : '#B9E769',
+    eight : '#F1C453',
+    nine : '#F29E4C'
   }
 
   const Pandora = {
     zero: 'Pandora',
-    one : '#f94144',
-    two : '#f3722c',
-    three : '#f8961e',
-    four : '#f9844a',
-    five : '#f9c74f',
-    six : '#90be6d',
-    seven : '#43aa8b',
+    one : '#F94144',
+    two : '#F3722C',
+    three : '#F8961E',
+    four : '#F9844A',
+    five : '#F9C74F',
+    six : '#90BE6D',
+    seven : '#43AA8B',
     eight : '#577590',
-    nine : '#277da1'
+    nine : '#277DA1'
   }
 
     return (
