@@ -142,12 +142,12 @@ const Home = () => {
 
     return (
       <>
-      <NavBar/>
-        <motion.div className="container" margin={0} height='80vh'  variants={containerVariants} initial="hidden" animate="visible">
+      <NavBar />
+        <motion.div className="container" margin={0} height='80vh' w='50%'  variants={containerVariants} initial="hidden" animate="visible">
             <Box w='100%' m={0} >
 
-                <Center className="palette"  direction='row' h="90vh" w="100%">
-                    <Stack direction='column' spacing={2} alignItems='start'>
+                <Center className="palette" justifyContent='center' justifySelf='center' alignItems='center' direction='row' h="90vh" width="100vw">
+                    <Stack direction='column' spacing={2} >
                         <Stack spacing={5} direction='row'>
                             <Palette palette={Friday}/>
                             <Palette palette={Lollipop}/>
