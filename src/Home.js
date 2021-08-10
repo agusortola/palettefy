@@ -1,10 +1,7 @@
-import DetailedPalette from "./DetailedPalette"
 import Palette from "./Palette";
-import { Box, Stack, Button, Center, Text  } from '@chakra-ui/react';
-import {Link } from "react-router-dom";
-import {useState, useContext} from 'react';
+import { Box, Stack, Center  } from '@chakra-ui/react';
 import { NavBar } from './NavBar';
-
+import { motion } from 'framer-motion'
 
 const Home = () => {
 
@@ -125,13 +122,31 @@ const Home = () => {
     nine : '#277DA1'
   }
 
+  const containerVariants = {
+    hidden: {
+      y: '50vh',
+      opacity:'0%',
+    },
+    visible: {
+      y: 0,
+      opacity:'100%',
+      transition: {
+        type: 'spring',
+        damping: 20,
+        stiffness:140
+      }
+    },
+  }
+  
+
+
     return (
       <>
       <NavBar/>
-        <div className="container" margin={0} height='80vh'>
-            <Box w='100%' m={0}>
+        <motion.div className="container" margin={0} height='80vh'  variants={containerVariants} initial="hidden" animate="visible">
+            <Box w='100%' m={0} >
 
-                <Center className="palette" width='100%' direction='row' h="90vh" w="100%">
+                <Center className="palette"  direction='row' h="90vh" w="100%">
                     <Stack direction='column' spacing={2} alignItems='start'>
                         <Stack spacing={5} direction='row'>
                             <Palette palette={Friday}/>
@@ -151,7 +166,7 @@ const Home = () => {
                     </Stack>
                 </Center>
             </Box>
-        </div>
+        </motion.div>
         </>
      );
 }

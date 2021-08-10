@@ -15,15 +15,15 @@ const DetailedPalette = ({ setColor, setShowModal }) => {
         y: 0,
         transition: {
           type: 'spring',
-          damping: 11,
-          stiffness:120
+          damping: 16,
+          stiffness:140
         }
       },
     }
     
     const firstRowVariants = {
       hidden: {
-        width: '0%'
+        width: '0%',
       },
       visible: {
         zIndex: 3,
@@ -37,7 +37,7 @@ const DetailedPalette = ({ setColor, setShowModal }) => {
     
     const secondRowVariants = {
       hidden: {
-        width: '0%'
+        width: '0%',
       },
       visible: {
         width: '100%',
@@ -73,60 +73,60 @@ const DetailedPalette = ({ setColor, setShowModal }) => {
     return (
       <>
       <NavBar /> 
-        <motion.div variants={containerVariants} initial="hidden" animate="visible" marginTop={501}>
-        <Center justifyItems='center' width='100%' padding='5%'>
-          <Stack spacing={0} direction='column'>
-            <Stack spacing={0} direction='row'>
-              <motion.div  w="100%"
-              variants={firstRowVariants}
-              >
-                <Button colorScheme={palette.one} bg={palette.one} variant="link" borderRadius={0}  color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.one)}> {palette.one} </Button>
-              </motion.div>
+        <motion.div variants={containerVariants} initial="hidden" animate="visible" marginTop={500} width='100%'>
+        <Center justifyItems='center' justifySelf='center' p='5%' width='100%' >
+          <Stack spacing={-2} direction='column' w="100"  marginRight={0}>
+            <Stack spacing={-0} direction='row' >
               <motion.center  w="100%"
               variants={firstRowVariants}
               >
-                <Button colorScheme={palette.two} bg={palette.two} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.two)}> {palette.two} </Button>
-              </motion.center >
+                <Button colorScheme={palette.one} bg={palette.one}  borderRadius={0}  w='100%' p='10vh' onClick={()=> handleClick(palette.one)}/>
+              </motion.center>
+              <motion.center  w="100%" 
+              variants={firstRowVariants}
+              >
+                <Button colorScheme={palette.two} bg={palette.two}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.two)}/>
+              </motion.center>
               <motion.center  w="100%"
               variants={firstRowVariants}
               >
-                <Button colorScheme={palette.three} bg={palette.three} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.three)}> {palette.three} </Button>
+                <Button colorScheme={palette.three} bg={palette.three}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.three)}/>
               </motion.center >
             </Stack>
             
-            <Stack spacing={0} direction='row'>
-            <motion.center  w="100%"
+            <Stack spacing={0} direction='row' >
+              <motion.center  w="100%"
               variants={secondRowVariants}
               >
-                <Button colorScheme={palette.four} bg={palette.four} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.four)}> {palette.four} </Button>
+                <Button colorScheme={palette.four} bg={palette.four}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.four)}/>
               </motion.center >
               <motion.center  w="100%"
               variants={secondRowVariants}
               >
-                <Button colorScheme={palette.five} bg={palette.five} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.five)}> {palette.five} </Button>
+                <Button colorScheme={palette.five} bg={palette.five}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.five)}/>
               </motion.center >
               <motion.center  w="100%"
               variants={secondRowVariants}
               >
-                <Button colorScheme={palette.six} bg={palette.six} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.six)}> {palette.six} </Button>
+                <Button colorScheme={palette.six} bg={palette.six}  borderRadius={2} w='80%' p='10vh' onClick={()=> handleClick(palette.six)}/>
               </motion.center >
             </Stack>
     
-            <Stack spacing={0} direction='row'>
-            <motion.center  w="100%"
+            <Stack spacing={0} direction='row' >
+              <motion.center  w="100%"
               variants={thirdRowVariants}
               >
-                <Button colorScheme={palette.seven} bg={palette.seven} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.seven)}> {palette.seven} </Button>
+                <Button colorScheme={palette.seven} bg={palette.seven}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.seven)}/>
               </motion.center >
               <motion.center  w="100%"
               variants={thirdRowVariants}
               >
-                <Button colorScheme={palette.eight} bg={palette.eight} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.eight)}> {palette.eight} </Button>
+                <Button colorScheme={palette.eight} bg={palette.eight}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.eight)}/>
               </motion.center >
               <motion.center  w="100%"
               variants={thirdRowVariants}
               >
-                <Button colorScheme={palette.nine} bg={palette.nine} variant="link" borderRadius={0} color="white" fontWeight={800} fontSize='x-large' w='100%' p='10vh' onClick={()=> handleClick(palette.nine)}> {palette.nine} </Button>
+                <Button colorScheme={palette.nine} bg={palette.nine}  borderRadius={0} w='80%' p='10vh' onClick={()=> handleClick(palette.nine)}/>
               </motion.center >
             </Stack>
           </Stack>
